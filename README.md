@@ -2,6 +2,13 @@
 
 Página de normas y reglas del hostal.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -74,7 +81,7 @@ Página de normas y reglas del hostal.
 
 ## Datos
 
-- `data/rules.ts` — Array de 6 categorías con 36 reglas (icono, título, items[])
+- `data/rules.js` — Array de 6 categorías con 36 reglas (icono, título, items[])
 
 ## Referencia
 
