@@ -2,6 +2,13 @@
 
 Página "Sobre nosotros" con historia, misión, visión y valores.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### SectionHeading
