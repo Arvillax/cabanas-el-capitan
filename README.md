@@ -2,6 +2,13 @@
 
 Página de servicios ofrecidos por las cabañas.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -40,7 +47,7 @@ Página de servicios ofrecidos por las cabañas.
 
 ## Datos
 
-- `data/services.ts` — Array de 12 servicios (icono, título, descripción)
+- `data/services.js` — Array de 12 servicios (icono, título, descripción)
 
 ## Referencia
 
