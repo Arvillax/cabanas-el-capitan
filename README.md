@@ -2,6 +2,13 @@
 
 Página de ubicación y cómo llegar a las cabañas.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -46,8 +53,8 @@ Página de ubicación y cómo llegar a las cabañas.
 
 ## Datos
 
-- `data/attractions.ts` — Array de 4 atracciones (título, descripción, distancia, imagen)
-- `data/site.ts` — Dirección, coordenadas, teléfono
+- `data/attractions.js` — Array de 4 atracciones (título, descripción, distancia, imagen)
+- `data/site.js` — Dirección, coordenadas, teléfono
 
 ## Referencia
 
