@@ -1,8 +1,15 @@
-# Componentes Compartidos
+# Global — Componentes Compartidos
 
 Esta rama contiene los componentes compartidos usados por todas las pantallas de la aplicación.
 
-## Componentes
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
+## Componentes compartidos
 
 ### Header
 - Logo (`img/logo/logo_1.webp`, 48x48)
@@ -39,9 +46,9 @@ Esta rama contiene los componentes compartidos usados por todas las pantallas de
 
 ## Datos compartidos
 
-- `data/site.ts` — Configuración del sitio (nombre, teléfono, dirección, redes)
-- `data/cabins.ts` — Interfaces de cabañas
-- `data/gallery.ts` — Interfaces de galería
+- `data/site.js` — Configuración del sitio (nombre, teléfono, dirección, redes)
+- `data/cabins.js` — Datos de cabañas
+- `data/gallery.js` — Datos de galería
 
 ## Ramas que heredan estos componentes
 
