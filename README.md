@@ -2,6 +2,13 @@
 
 Página de galería de fotos con filtro por categoría.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -33,7 +40,7 @@ Página de galería de fotos con filtro por categoría.
 
 ## Datos
 
-- `data/gallery.ts` — Array de 21 imágenes (src, alt, categoria)
+- `data/gallery.js` — Array de 21 imágenes (src, alt, categoria)
 
 ## Referencia
 
