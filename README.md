@@ -2,6 +2,13 @@
 
 Página de blog con artículos de viajes y experiencias.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -38,7 +45,7 @@ Página de blog con artículos de viajes y experiencias.
 
 ## Datos
 
-- `data/blog.ts` — Array de 6 artículos (título, excerpt, imagen, fecha, tag)
+- `data/blog.js` — Array de 6 artículos (título, excerpt, imagen, fecha, tag)
 
 ## Referencia
 
