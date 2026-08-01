@@ -2,6 +2,13 @@
 
 Página de preguntas frecuentes con acordeón interactivo.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -43,7 +50,7 @@ Página de preguntas frecuentes con acordeón interactivo.
 
 ## Datos
 
-- `data/faq.ts` — Array de 4 categorías con 13 items (pregunta, respuesta)
+- `data/faq.js` — Array de 4 categorías con 13 items (pregunta, respuesta)
 
 ## Referencia
 
