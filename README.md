@@ -2,6 +2,13 @@
 
 Página de contacto con formulario y datos de contacto.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### PageBanner
@@ -37,7 +44,7 @@ Página de contacto con formulario y datos de contacto.
 
 ## Datos
 
-- `data/site.ts` — Teléfono, WhatsApp, dirección, horario
+- `data/site.js` — Teléfono, WhatsApp, dirección, horario
 
 ## Referencia
 
