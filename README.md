@@ -2,6 +2,13 @@
 
 Página principal del sitio. Muestra una vista general de las cabañas, servicios, ubicación y opiniones.
 
+## Setup del proyecto
+
+- **Vite 6** + **React 19** + **Tailwind CSS 4.1**
+- Para instalar: `npm install`
+- Para desarrollar: `npm run dev`
+- Para build: `npm run build`
+
 ## Componentes de esta pantalla
 
 ### HeroCarousel
@@ -47,8 +54,8 @@ Página principal del sitio. Muestra una vista general de las cabañas, servicio
 
 ## Datos
 
-- `data/cabins.ts` — Array de 7 cabañas (nombre, tipo, folder, portada, descripción, enlace)
-- `data/site.ts` — Configuración del sitio
+- `data/cabins.js` — Array de 7 cabañas (nombre, tipo, folder, portada, descripción, enlace)
+- `data/site.js` — Configuración del sitio
 
 ## Referencia
 
