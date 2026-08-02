@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { galleryData } from '../../data/gallery.js'; // Ajusta la ruta a tu data/gallery.js
+import { galleryData } from '../../data/gallery.js'; 
 
 const FILTROS = [
   { id: 'todas', label: 'Todas' },
@@ -17,34 +17,28 @@ export function Galeria() {
 
   return (
     <main className="min-h-screen bg-[#f6efe6]">
-      {/* Page Banner con el tono exacto y alineación a la izquierda */}
       <section className="bg-[#362117] text-white py-10 px-4">
         <div className="max-w-[1100px] mx-auto text-left space-y-2">
-          {/* Breadcrumb */}
           <nav className="text-xs text-white/70">
             <a href="#" className="underline hover:text-white">Inicio</a>
             <span className="mx-1">›</span>
             <span>Galería</span>
           </nav>
 
-          {/* Kicker */}
           <p className="text-[0.75rem] uppercase tracking-[0.12em] font-extrabold text-[#e7c89e] m-0">
             Imágenes del paraíso
           </p>
 
-          {/* Título principal */}
           <h1 className="text-3xl md:text-4xl font-bold text-white m-0">
             Galería de Fotos
           </h1>
 
-          {/* Descripción exacta */}
           <p className="text-white/80 text-sm md:text-base max-w-2xl m-0 pt-1">
             Descubre visualmente las instalaciones, cabañas y ambientes de Cabañas El Capitan.
           </p>
         </div>
       </section>
 
-      {/* FilterBar */}
       <div className="max-w-[1100px] mx-auto px-4 my-8">
         <div className="flex flex-wrap justify-start gap-3">
           {FILTROS.map((filtro) => {
@@ -66,7 +60,6 @@ export function Galeria() {
         </div>
       </div>
 
-      {/* GalleryGrid */}
       <div className="max-w-[1100px] mx-auto px-4 pb-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {imagenesFiltradas.map((item) => (
