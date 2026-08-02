@@ -1,8 +1,25 @@
+import PageBanner from "./components/PageBanner";
+import SiteHeader from "./components/SiteHeader";
+import ContactInfo from "./components/ContactInfo";
+import ContactForm from "./components/ContactForm";
+import SiteFooter from "./components/SiteFooter";
+
 function App() {
   return (
     <div className="min-h-screen bg-[#f6efe6] text-[#362117]">
-      <h1 className="text-4xl font-bold p-8">Cabañas El Capitán</h1>
-      <p className="px-8">Proyecto migrado a React + Vite + Tailwind</p>
+      <SiteHeader />
+      <PageBanner />
+
+      <main>
+        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+            <ContactInfo />
+            <ContactForm />
+          </div>
+        </section>
+      </main>
+
+      <SiteFooter />
     </div>
   );
 }
