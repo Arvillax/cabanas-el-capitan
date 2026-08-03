@@ -1,0 +1,17 @@
+/* Header — transición del nav hamburguesa */
+.nav-mobile {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.nav-mobile.open {
+  max-height: 100vh;
+}
+
+@media (min-width: 720px) {
+  .nav-mobile {
+    max-height: none !important;
+    transition: none;
+  }
+}
