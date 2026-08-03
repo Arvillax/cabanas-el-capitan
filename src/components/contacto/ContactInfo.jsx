@@ -1,4 +1,4 @@
-import { siteConfig } from "../../data/site";
+import { siteConfig } from "../../../data/site";
 
 const formattedPhone = siteConfig.telefono.replace(/^\+504(\d{4})(\d{4})$/, "+504 $1-$2");
 const whatsappLink = `${siteConfig.whatsappLink}?text=${encodeURIComponent("Hola quiero hacer una consulta")}`;

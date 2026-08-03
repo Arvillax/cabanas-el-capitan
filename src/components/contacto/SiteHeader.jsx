@@ -1,4 +1,4 @@
-import { navItems, siteConfig } from "../../data/site";
+import { navItems, siteConfig } from "../../../data/site";
 
 const whatsappLink = `${siteConfig.whatsappLink}?text=${encodeURIComponent("Hola quiero hacer una consulta")}`;
 

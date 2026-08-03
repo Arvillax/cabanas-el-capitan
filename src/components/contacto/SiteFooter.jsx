@@ -1,4 +1,4 @@
-import { navItems, siteConfig } from "../../data/site";
+import { navItems, siteConfig } from "../../../data/site";
 
 const formattedPhone = siteConfig.telefono.replace(/^\+504(\d{4})(\d{4})$/, "+504 $1-$2");
 

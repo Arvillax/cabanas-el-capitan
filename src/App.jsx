@@ -1,8 +1,8 @@
-import PageBanner from "./components/PageBanner";
-import SiteHeader from "./components/SiteHeader";
-import ContactInfo from "./components/ContactInfo";
-import ContactForm from "./components/ContactForm";
-import SiteFooter from "./components/SiteFooter";
+import PageBanner from "./components/contacto/PageBanner";
+import SiteHeader from "./components/contacto/SiteHeader";
+import ContactInfo from "./components/contacto/ContactInfo";
+import ContactForm from "./components/contacto/ContactForm";
+import SiteFooter from "./components/contacto/SiteFooter";
 
 function App() {
   return (
