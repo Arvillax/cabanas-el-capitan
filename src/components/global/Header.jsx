@@ -9,8 +9,8 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="flex flex-col bg-bg border-b-2 border-primary-light md:flex-row md:items-center md:p-6 md:px-5">
-      <div className="flex items-center justify-between gap-4 p-3 px-5 md:flex-1 md:p-0">
+    <header className="flex flex-col bg-bg border-b-2 border-primary-light md:flex-row md:items-center md:justify-between md:gap-4 md:px-5 md:py-4">
+      <div className="flex items-center justify-between gap-4 p-3 px-5 md:p-0 md:gap-3">
         <a href="/" className="flex items-center gap-3 text-primary no-underline">
           <img
             src="/img/logo/logo_1.webp"
@@ -27,33 +27,6 @@ export default function Header() {
           </span>
         </a>
 
-        <div className="hidden md:flex gap-2">
-          <a
-            href={siteConfig.redes.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
-          >
-            Facebook
-          </a>
-          <a
-            href={siteConfig.redes.tiktok}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
-          >
-            TikTok
-          </a>
-          <a
-            href={siteConfig.whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
-          >
-            WhatsApp
-          </a>
-        </div>
-
         <button
           onClick={toggleMenu}
           className="md:hidden flex flex-col justify-evenly w-12 h-12 p-1 cursor-pointer bg-transparent border-none"
@@ -65,8 +38,8 @@ export default function Header() {
         </button>
       </div>
 
-      <nav className={`nav-mobile${menuOpen ? " open" : ""} bg-bg-card border-t border-gray-200`}>
-        <ul className="list-none p-0 m-0 w-full md:w-auto md:flex md:flex-wrap md:items-center md:justify-end md:gap-2">
+      <nav className={`nav-mobile${menuOpen ? " open" : ""} bg-bg-card border-t border-gray-200 md:flex-1 md:bg-transparent md:border-0`}>
+        <ul className="list-none p-0 m-0 w-full md:w-full md:flex md:flex-wrap md:items-center md:justify-center md:gap-4">
           {navItems.map((item) => (
             <li key={item.href} className="border-b border-gray-100 md:border-b-0">
               <a
@@ -80,6 +53,33 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+
+      <div className="hidden md:flex gap-2">
+        <a
+          href={siteConfig.redes.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
+        >
+          Facebook
+        </a>
+        <a
+          href={siteConfig.redes.tiktok}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
+        >
+          TikTok
+        </a>
+        <a
+          href={siteConfig.whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-xs font-bold text-primary hover:bg-bg-muted"
+        >
+          WhatsApp
+        </a>
+      </div>
     </header>
   );
 }
