@@ -9,7 +9,7 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="flex flex-col bg-bg border-b-2 border-primary-light md:flex-row md:items-center md:p-2 md:px-5">
+    <header className="flex flex-col bg-bg border-b-2 border-primary-light md:flex-row md:items-center md:p-6 md:px-5">
       <div className="flex items-center justify-between gap-4 p-3 px-5 md:flex-1 md:p-0">
         <a href="/" className="flex items-center gap-3 text-primary no-underline">
           <img
@@ -21,7 +21,7 @@ export default function Header() {
             <strong className="block text-lg font-bold leading-none">
               {siteConfig.nombre}
             </strong>
-            <small className="block text-xs text-text-secondary mt-0.5">
+            <small className="block text-xs text-text-secondary mt-0.5 w-62" >
               {siteConfig.slogan}
             </small>
           </span>
@@ -66,7 +66,7 @@ export default function Header() {
       </div>
 
       <nav className={`nav-mobile${menuOpen ? " open" : ""} bg-bg-card border-t border-gray-200`}>
-        <ul className="list-none p-0 m-0">
+        <ul className="list-none p-0 m-0 w-full md:w-auto md:flex md:flex-wrap md:items-center md:justify-end md:gap-2">
           {navItems.map((item) => (
             <li key={item.href} className="border-b border-gray-100 md:border-b-0">
               <a
