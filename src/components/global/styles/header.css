@@ -12,6 +12,16 @@
 @media (min-width: 720px) {
   .nav-mobile {
     max-height: none !important;
+    overflow: visible;
+    background: none;
+    flex: 0 0 100%;
     transition: none;
+  }
+
+  .nav-mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }

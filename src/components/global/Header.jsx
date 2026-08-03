@@ -65,7 +65,7 @@ export default function Header() {
         </button>
       </div>
 
-      <nav className={`nav-mobile${menuOpen ? " open" : ""} bg-bg-card border-t border-gray-200 md:border-t md:border-primary-light/15 md:flex md:flex-1 md:transition-none`}>
+      <nav className={`nav-mobile${menuOpen ? " open" : ""} bg-bg-card border-t border-gray-200`}>
         <ul className="list-none p-0 m-0">
           {navItems.map((item) => (
             <li key={item.href} className="border-b border-gray-100 md:border-b-0">
