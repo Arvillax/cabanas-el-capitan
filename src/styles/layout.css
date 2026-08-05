@@ -1,0 +1,205 @@
+/* Layout base — migrado desde base/styles/style.css */
+
+/* Secciones */
+.section {
+  padding: 4rem 0;
+}
+
+.section-dark {
+  background-color: #2f241d;
+  color: #ffffff;
+}
+
+.section-muted {
+  background-color: #f0dfc7;
+}
+
+/* Kicker (texto small uppercase) */
+.kicker {
+  margin: 0 0 0.5rem;
+  color: #2f5b47;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Section heading */
+.section-heading {
+  max-width: 54rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  margin: 0.2rem 0 0.75rem;
+  color: #362117;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #6e5a4d;
+}
+
+.section-heading.light .kicker {
+  color: #e7c89e;
+}
+
+.section-heading.light h2 {
+  color: #ffffff;
+}
+
+.section-heading.light p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Page banner */
+.page-banner {
+  background-color: #362117;
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.page-banner .kicker {
+  color: #e7c89e;
+}
+
+.page-banner h1 {
+  font-size: 2.2rem;
+  margin: 0.25rem 0 0.5rem;
+  color: #fff;
+}
+
+.page-banner p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 44rem;
+}
+
+/* CTA block */
+.cta-block {
+  text-align: center;
+}
+
+.cta-block .section-heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.cta-block h2 {
+  font-size: 2rem;
+  margin: 0.2rem 0 0.75rem;
+  color: #fff;
+}
+
+.cta-block p {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 44rem;
+}
+
+/* Botones base */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background-color: #362117;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5b3a29;
+}
+
+.btn-sand {
+  background-color: #e7c89e;
+  color: #362117;
+}
+
+.btn-sand:hover {
+  background-color: #d4b080;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #362117;
+  border: 2px solid #362117;
+}
+
+.btn-outline:hover {
+  background-color: #362117;
+  color: #fff;
+}
+
+/* Dark card */
+.dark-card {
+  background-color: #2f241d;
+  color: #ffffff;
+}
+
+.dark-card h2,
+.dark-card h3 {
+  color: #ffffff;
+}
+
+.dark-card p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Container genérico */
+.container {
+  max-width: 1100px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+/* Botones grupo */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.center-group {
+  justify-content: center;
+}
+
+/* Formularios */
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #362117;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #e0d0c0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #fffaf4;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #5b3a29;
+}

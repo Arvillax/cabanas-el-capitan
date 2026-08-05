@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "./styles/variables.css";
 @import "./styles/base.css";
+@import "./styles/layout.css";
 @import "./components/global/styles/header.css";
 @import "./components/global/styles/footer.css";
 @import "./components/opiniones/styles/reviews.css";
+@import "./components/ubicacion/styles/location.css";
