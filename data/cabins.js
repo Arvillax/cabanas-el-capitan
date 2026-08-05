@@ -1,2 +1,59 @@
-// TODO: Migrar datos de cabañas desde index.js
-export const cabinsData = [];
+// Datos de cabañas — migrados desde index.js (rama base)
+export const cabinsData = [
+  {
+    nombre: "Cabaña Catalejo",
+    tipo: "Cabaña",
+    folder: "Cabaña Catalejo",
+    portada: "cabana_catalejo_1.jpg",
+    descripcion: "Disfruta de esta acogedora cabaña con vista al entorno natural de la isla.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20catalejo",
+  },
+  {
+    nombre: "Cabaña Estribor",
+    tipo: "Cabaña",
+    folder: "Cabaña Estribor",
+    portada: "cabana_estribor_1.jpg",
+    descripcion: "Espacio confortable con todas las amenidades para tu descanso ideal.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20estribor",
+  },
+  {
+    nombre: "Cabaña Familiar La Perla",
+    tipo: "Cabaña familiar",
+    folder: "Cabaña Familiar La Perla",
+    portada: "cabana_familiar_la_perla_1.jpg",
+    descripcion: "Ideal para familias, con amplio espacio y todas las comodidades necesarias.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20familiar%20la%20perla",
+  },
+  {
+    nombre: "Cabaña Timonel",
+    tipo: "Cabaña",
+    folder: "Cabaña Timonel",
+    portada: "cabana_timonel_1.jpg",
+    descripcion: "Relájate en este hermoso espacio con vistas naturales únicas del golfo.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20timonel",
+  },
+  {
+    nombre: "Habitación Almeja",
+    tipo: "Habitación",
+    folder: "Habitación Almeja",
+    portada: "habitacion_almeja_1.jpg",
+    descripcion: "Habitación acogedora con todo lo necesario para una estadía cómoda.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20habitacion%20almeja",
+  },
+  {
+    nombre: "Cabaña La Fragata",
+    tipo: "Próximamente",
+    folder: null,
+    portada: null,
+    descripcion: "Espacio reservado. Esta cabaña aún no tiene fotografías disponibles.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20fragata",
+  },
+  {
+    nombre: "Cabaña La Navío",
+    tipo: "Próximamente",
+    folder: null,
+    portada: null,
+    descripcion: "Espacio reservado. Esta cabaña aún no tiene fotografías disponibles.",
+    enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20nav%C3%ADo",
+  },
+];
