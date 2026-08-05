@@ -1,4 +1,58 @@
+<<<<<<< HEAD
 @import "./styles/variables.css";
 @import "./styles/base.css";
 @import "./components/global/styles/header.css";
 @import "./components/global/styles/footer.css";
+=======
+@import "tailwindcss";
+
+@import "./components/global/styles/header.css";
+@import "./components/global/styles/footer.css";
+@import "./components/opiniones/styles/reviews.css";
+
+/* Base global */
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6efe6;
+    color: #33261f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1100px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+
+>>>>>>> origin/opiniones
