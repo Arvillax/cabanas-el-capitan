@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { siteConfig, navItems } from "../../../data/site.js";
 import "../global/styles/header.css";
 
@@ -11,7 +12,7 @@ export default function Header() {
   return (
     <header className="flex flex-col bg-bg border-b-2 border-primary-light md:flex-row md:items-center md:justify-between md:gap-4 md:px-5 md:py-4">
       <div className="flex items-center justify-between gap-4 p-3 px-5 md:p-0 md:gap-3">
-        <a href="/" className="flex items-center gap-3 text-primary no-underline">
+        <Link to="/" className="flex items-center gap-3 text-primary no-underline">
           <img
             src="/img/logo/logo_1.webp"
             alt="Logo Cabañas El Capitan"
@@ -25,7 +26,7 @@ export default function Header() {
               {siteConfig.slogan}
             </small>
           </span>
-        </a>
+        </Link>
 
         <button
           onClick={toggleMenu}
@@ -42,13 +43,13 @@ export default function Header() {
         <ul className="list-none p-0 m-0 w-full md:w-full md:flex md:flex-wrap md:items-center md:justify-center md:gap-4">
           {navItems.map((item) => (
             <li key={item.href} className="border-b border-gray-100 md:border-b-0">
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 onClick={closeMenu}
                 className="block p-3 px-5 text-primary font-semibold md:text-xs md:p-2 md:px-3 md:rounded hover:bg-bg-muted hover:text-primary-light"
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

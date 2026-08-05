@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { siteConfig, navItems } from "../../../data/site.js";
 
 export default function Footer() {
@@ -28,12 +29,12 @@ export default function Footer() {
             <ul className="list-none p-0 m-0">
               {explorar.map((item) => (
                 <li key={item.href} className="mb-1.5">
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="text-white/75 no-underline text-sm hover:text-white hover:underline"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -46,12 +47,12 @@ export default function Footer() {
             <ul className="list-none p-0 m-0">
               {informacion.map((item) => (
                 <li key={item.href} className="mb-1.5">
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="text-white/75 no-underline text-sm hover:text-white hover:underline"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
