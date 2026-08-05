@@ -44,7 +44,7 @@ export default function ContactoCTA() {
           </a>
           <a
             href="#contacto"
-            className="inline-block px-6 py-3 bg-transparent border-2 border-accent text-accent rounded-lg font-bold text-sm text-center hover:bg-accent/15 transition-colors"
+            className="inline-block px-6 py-3 bg-transparent border-2 border-accent text-white rounded-lg font-bold text-sm text-center hover:bg-accent/15 transition-colors "
           >
             Ir al formulario de contacto
           </a>
