@@ -1,10 +1,11 @@
-function App() {
+import React from 'react';
+import { Galeria } from './components/galeria/Galeria';
+import { Normas } from './components/normas/Normas';
+
+export default function App() {
   return (
-    <div className="min-h-screen bg-[#f6efe6] text-[#362117]">
-      <h1 className="text-4xl font-bold p-8">Cabañas El Capitán</h1>
-      <p className="px-8">Proyecto migrado a React + Vite + Tailwind</p>
+    <div className="min-h-screen bg-[#f6efe6]">
+      <Normas />
     </div>
   );
 }
-
-export default App;
