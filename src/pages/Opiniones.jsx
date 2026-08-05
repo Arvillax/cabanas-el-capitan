@@ -1,8 +1,6 @@
+import ReviewsSection from "../components/opiniones/ReviewsSection";
+import { reviews, ratingSummary } from "../../data/reviews.js";
+
 export default function Opiniones() {
-  return (
-    <section className="py-20 px-4 text-center">
-      <h1 className="text-4xl font-bold text-primary">Opiniones</h1>
-      <p className="mt-4 text-lg text-text/70">Contenido próximamente.</p>
-    </section>
-  );
+  return <ReviewsSection reviews={reviews} ratingSummary={ratingSummary} />;
 }

@@ -1,8 +1,21 @@
+import PageBanner from "../components/contacto/PageBanner";
+import ContactForm from "../components/contacto/ContactForm";
+import ContactInfo from "../components/contacto/ContactInfo";
+
 export default function Contacto() {
   return (
-    <section className="py-20 px-4 text-center">
-      <h1 className="text-4xl font-bold text-primary">Contacto</h1>
-      <p className="mt-4 text-lg text-text/70">Contenido próximamente.</p>
-    </section>
+    <>
+      <PageBanner />
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-5">
+          <div className="lg:col-span-3">
+            <ContactForm />
+          </div>
+          <div className="lg:col-span-2">
+            <ContactInfo />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

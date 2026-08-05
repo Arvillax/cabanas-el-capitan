@@ -1,8 +1,25 @@
+import LocationSection from "../components/ubicacion/LocationSection";
+import { attractionsData } from "../../data/attractions.js";
+
+const steps = [
+  "Desde Tegucigalpa, toma la carretera hacia Choluteca.",
+  "Llega al muelle de Coyolito en la costa.",
+  "Toma una lancha hacia la Isla del Tigre.",
+  "Llega a Amapala y sigue las señales hacia las cabañas.",
+];
+
+const transportStats = [
+  { value: "15 min", label: "En lancha desde Coyolito" },
+  { value: "3 km", label: "Del muelle a las cabañas" },
+  { value: "5 min", label: "En mototaxi" },
+];
+
 export default function Ubicacion() {
   return (
-    <section className="py-20 px-4 text-center">
-      <h1 className="text-4xl font-bold text-primary">Ubicación</h1>
-      <p className="mt-4 text-lg text-text/70">Contenido próximamente.</p>
-    </section>
+    <LocationSection
+      steps={steps}
+      attractions={attractionsData}
+      transportStats={transportStats}
+    />
   );
 }
