@@ -1,4 +1,4 @@
-import { reviewsData } from "../../../data/reviews.js";
+import { reviews } from "../../../data/reviews.js";
 
 export default function OpinionesSection() {
   return (
@@ -14,16 +14,22 @@ export default function OpinionesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviewsData.map((review, i) => (
+          {reviews.map((review, i) => (
             <blockquote
               key={i}
               className="p-6 bg-bg-card rounded-[15px] shadow-[0_4px_10px_rgba(0,0,0,0.10)] border border-border m-0"
             >
+              <div className="text-accent text-sm mb-2">{review.stars}</div>
               <p className="text-text-secondary italic mb-4">
-                &ldquo;{review.texto}&rdquo;
+                &ldquo;{review.text}&rdquo;
               </p>
               <cite className="block not-italic font-bold text-sm text-primary-light">
-                {review.autor}
+                {review.author}
+                {review.meta && (
+                  <span className="block font-normal text-xs text-text/60 mt-1">
+                    {review.meta}
+                  </span>
+                )}
               </cite>
             </blockquote>
           ))}

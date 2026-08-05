@@ -18,15 +18,16 @@ export default function ServiciosSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {servicesData.map((servicio, i) => (
+          {servicesData.map((servicio) => (
             <div
-              key={i}
+              key={servicio.id}
               className="p-6 bg-white/[0.08] border border-white/[0.14] rounded-[15px]"
             >
+              <div className="text-3xl mb-3">{servicio.icon}</div>
               <h3 className="text-accent text-lg font-bold mb-2">
-                {servicio.titulo}
+                {servicio.title}
               </h3>
-              <p className="text-white/78 text-sm">{servicio.descripcion}</p>
+              <p className="text-white/78 text-sm">{servicio.description}</p>
             </div>
           ))}
         </div>
