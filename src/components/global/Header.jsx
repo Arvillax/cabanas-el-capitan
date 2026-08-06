@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { siteConfig, navItems } from "../../../data/site.js";
+import { img } from "../../utils/base.js";
 import "../global/styles/header.css";
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
       <div className="flex items-center justify-between gap-4 p-3 px-5 md:p-0 md:gap-3">
         <Link to="/" className="flex items-center gap-3 text-primary no-underline">
           <img
-            src="/img/logo/logo_1.webp"
+            src={img("/img/logo/logo_1.webp")}
             alt="Logo Cabañas El Capitan"
             className="w-12 h-12 rounded-lg"
           />

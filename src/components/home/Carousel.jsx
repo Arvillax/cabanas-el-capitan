@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
+import { img } from "../../utils/base.js";
 import "./styles/home.css";
 
 const slides = [
   {
-    imagen: "/img/Area Social/area_social_5.jpg",
+    imagen: img("/img/Area Social/area_social_5.jpg"),
     alt: "Área social Cabañas El Capitan",
     kicker: "Escapadas naturales con comodidad real",
     titulo: "Cabañas El Capitan",
@@ -19,7 +20,7 @@ const slides = [
     ],
   },
   {
-    imagen: "/img/Cabaña Estribor/cabana_estribor_4.jpg",
+    imagen: img("/img/Cabaña Estribor/cabana_estribor_4.jpg"),
     alt: "Cabaña Estribor",
     kicker: "Cabaña Estribor",
     titulo: "Comodidad y naturaleza",
@@ -31,7 +32,7 @@ const slides = [
     stats: null,
   },
   {
-    imagen: "/img/Cabaña Timonel/cabana_timonel_3.jpg",
+    imagen: img("/img/Cabaña Timonel/cabana_timonel_3.jpg"),
     alt: "Cabaña Timonel",
     kicker: "Explora la isla",
     titulo: "Vista al Golfo de Fonseca",
@@ -43,7 +44,7 @@ const slides = [
     stats: null,
   },
   {
-    imagen: "/img/Cabaña Catalejo/cabana_catalejo_1.jpg",
+    imagen: img("/img/Cabaña Catalejo/cabana_catalejo_1.jpg"),
     alt: "Cabaña Catalejo",
     kicker: "Cabaña Catalejo",
     titulo: "Descansa como mereces",

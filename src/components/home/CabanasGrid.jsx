@@ -1,4 +1,5 @@
 import { cabinsData } from "../../../data/cabins.js";
+import { img } from "../../utils/base.js";
 
 export default function CabanasGrid() {
   return (
@@ -25,7 +26,7 @@ export default function CabanasGrid() {
             >
               {cabana.folder && cabana.portada ? (
                 <img
-                  src={`/img/${cabana.folder}/${cabana.portada}`}
+                  src={img(`/img/${cabana.folder}/${cabana.portada}`)}
                   alt={cabana.nombre}
                   className="w-full h-[210px] object-cover"
                   loading="lazy"
