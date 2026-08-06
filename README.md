@@ -11,3 +11,4 @@ Proyecto de migración de sitio web estático a React + Vite + Tailwind CSS v4.
 | Jesus Fernando Moreno Martinez | 0801200601010 |
 | Jorge Isaac Orellana Guzmán | 0801200303720 |
 | Armando Jose Villamil Cruz | 1001200200132 |
+| Francisco Javier martinez orellana | 0801200117824 |
