@@ -42,11 +42,11 @@ export default function ContactoCTA() {
           >
             Consultar por WhatsApp
           </a>
-          <a
-            href="#contacto"
-            className="inline-block px-6 py-3 bg-transparent border-2 border-accent text-accent rounded-lg font-bold text-sm text-center hover:bg-accent/15 hover:text-white transition-colors"
+         <a
+            href="/contacto"
+            className="inline-block px-6 py-3 bg-transparent border-2 border-accent text-white rounded-lg font-bold text-sm text-center hover:bg-accent/15 transition-colors"
           >
-            Ir al formulario de contacto
+           Ir al formulario de contacto
           </a>
         </div>
       </div>
