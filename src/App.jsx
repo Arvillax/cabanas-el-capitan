@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/global/Header";
 import Footer from "./components/global/Footer";
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import QuienesSomos from "./pages/QuienesSomos";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-bg text-text flex flex-col">
         <Header />
         <main className="flex-1">
@@ -33,7 +33,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
